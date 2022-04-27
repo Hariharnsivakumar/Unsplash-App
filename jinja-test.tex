@@ -1,0 +1,19 @@
+\documentclass[a4paper,landscape]{article}
+\usepackage[margin=1cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{parskip}
+\graphicspath{ {\VAR{base_dir}} }
+
+\begin{document}
+
+\begin{minipage}{.5\linewidth}
+\centering
+\includegraphics[width=13cm, height = 13cm]{\VAR{im1}}
+
+\bigskip
+\begin{tabular}{@{}ll@{}}
+  Publish:&\VAR{var1}\\
+  Camera:&\VAR{var2}\\
+\end{tabular}
+\end{minipage}%
